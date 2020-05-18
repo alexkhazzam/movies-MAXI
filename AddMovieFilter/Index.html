@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>title</title>
+    <script src = "Main.js" defer></script>
+    <link rel = "stylesheet" href = "Styles.css">
+  </head>
+  <body>
+    <section class = "movie-information">
+        <form>
+            <p id = "movie-name">Movie Name</p>
+            <input type = "text" class = "movie-name" required>
+            <p id = "movie-genre-header">Movie Genre</p>
+            <p id = "movie-rating-header">Movie Rating</p>
+            <select id = "movies" class = "movie-genre" required>
+                <option class = "about-text">Action</option>
+                <option class = "movie-genres">Romance</option>
+                <option class = "movie-genres">Sci-fi</option>
+                <option class = "movie-genres">Animated</option>
+                <option class = "movie-genres">Comedy</option>
+                <option class = "movie-genres">Crime</option>
+                <option class = "movie-genres">Thriller</option>
+            </select>
+            <input type = "number" class = "movie-rating" required max="5" min = "1">
+            <input type = "submit" class = "submitting-form">
+        </form>
+    </section>
+    <section class = "list-of-movies">
+        <h2 class = "movie-lists">Your Movies</h2>
+        <ul class = "unordered-movie-list"></ul>
+    </section>
+    <section class = "searching-for-movie">
+        <form>
+            <p id = "filter-header">Search Movie By Title</p>
+            <input type = "text" class = "movie-title" required>
+            <input type = "submit" class = "submitting-movie-search">
+        </form>
+    </section>
+  </body>
+</html>
